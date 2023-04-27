@@ -21,8 +21,8 @@ function [transport, efficient] = computeChannelFitting_Loop(A, r, sep, data, ef
 
 % Proceeding to the separation of radial distances and reflectance profiles
 % data.
-[r1, r2] = getDataSeparated(r, sep);
-[data1, data2] = getDataSeparated(data, sep);
+[r1, r2] = getArraySeparated(r, sep);
+[data1, data2] = getArraySeparated(data, sep);
 
 % Computing new estimates of optical coefficients with previous iterated
 % values.
