@@ -2,7 +2,7 @@ function [transport, efficient] = computeChannelFitting_Init(A, r, sep, data)
 % AIM
 % Computes the inversion method for the Part 1 Initialization. The
 % computation is done for a specific channel and record.
-% 
+
 % INPUTS
 % A (double): diffuse Fresnel parameter for internal reflections in the
 % material.
@@ -11,12 +11,29 @@ function [transport, efficient] = computeChannelFitting_Init(A, r, sep, data)
 % sep (int): integer to separate the reflectance data.
 % data (mat): vector of the reflectance profile for a specific colour
 % channel and record.
-% 
+
 % OUTPUTS
 % transport (mat): transport coefficients estimated on the first part of
 % the reflectance curve.
 % efficient (mat): efficient coefficients estimated on the second part of
 % the reflectance curve.
+
+% Copyright (C) 2023 - Mathieu Nguyen
+
+% This program is free software: you can redistribute it and/or modify 
+% it under the terms of the GNU General Public License as published by 
+% the Free Software Foundation, either version 3 of the License, or 
+% (at your option) any later version. 
+
+% This program is distributed in the hope that it will be useful, 
+% but WITHOUT ANY WARRANTY; without even the implied warranty of 
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+% GNU General Public License for more details. 
+
+% You should have received a copy of the GNU General Public License 
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 
 % Separation of vector for distance and reflectance data
 [r1, r2] = getArraySeparated(r, sep);
