@@ -165,8 +165,8 @@ end
 % Converting from (transport, efficient) to (absorption, reduced
 % scattering) by taking the mean of all estimates for transport and
 % efficient coefficients (method 1)
-finalEff = mean(saveEff(:,:,end));
-finalTrp = mean(saveTrp(:,:,end));
+finalEff = mean(saveEff(:,:,end), [1]);
+finalTrp = mean(saveTrp(:,:,end), [1]);
 [finalSca, finalAbs] = getOpticalProperties(finalTrp, finalEff);
 
 % Writing processes in the .txt file and .mat file
