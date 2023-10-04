@@ -50,4 +50,4 @@ eta = ;
 
 % METHOD 2: Averaging signals
 % fprintf('### Method 2 ###\n');
-% computeInversion_method2(dataFilename, textFilename, matFilename, statFilename, numIterations, eta);
+% computeInversion_method2(dataFilename, textFilename, matFilename, numIterations, eta);
